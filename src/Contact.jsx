@@ -25,7 +25,7 @@ export const Contact = () => {
       embeds: [
         {
           fields: [
-            { name: 'Name', value: nameValue },
+            { name: 'Username', value: nameValue },
             { name: 'Email', value: emailValue },
             { name: 'Message', value: messageValue },
           ],
@@ -45,7 +45,7 @@ export const Contact = () => {
   return (
     <Box>
       <FormControl>
-        <FormLabel>Name:</FormLabel>
+        <FormLabel>Username:</FormLabel>
         <Input
           onChange={e => {
             setNameValue(e.target.value);
